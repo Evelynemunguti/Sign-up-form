@@ -1,0 +1,37 @@
+body{font-family:system-ui,Arial;
+    display:flex;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    background:#f8f8f8
+}
+form{
+/* background:white; */ 
+    padding:12px;
+    border-radius:8px;
+    width:320px;
+   
+}
+label{display:block;
+    margin-top:12px;
+    font-size:.9rem
+}
+input,button{width:100%;
+    padding:8px;
+    margin-top:6px;
+    border-radius:6px;
+    border:1px solid #ccc
+
+}
+button{margin-top:16px;
+    background:#e90606;
+    color:white;
+    border:none;
+    cursor:pointer
+}
+button[disabled]{opacity:.6;
+    cursor:not-allowed
+}
+input{
+    background-color: #e90606;
+}
