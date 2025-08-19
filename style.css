@@ -1,37 +1,80 @@
-body{font-family:system-ui,Arial;
-    display:flex;
-    min-height:100vh;
-    align-items:center;
-    justify-content:center;
-    background:#f8f8f8
+body {
+    font-family: system-ui, Arial;
+    margin: 0;
+    background: #f8f8f8;
 }
-form{
-/* background:white; */ 
-    padding:12px;
-    border-radius:8px;
-    width:320px;
+
+/* Main container: Form + Image */
+#sign {
+    display: flex;
+    align-items: center;       /* vertically center */
+    justify-content: center;   /* center horizontally */
+    gap: 5px;                 /* control spacing between form & image */
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form container */
+#words {
+    /* flex: 1; */
+    max-width: 400px;             /* Prevent form from being too wide */
    
 }
-label{display:block;
-    margin-top:12px;
-    font-size:.9rem
-}
-input,button{width:100%;
-    padding:8px;
-    margin-top:6px;
-    border-radius:6px;
-    border:1px solid #ccc
 
+/* Image container */
+#image {
+    /* flex: 1;           Image takes half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-button{margin-top:16px;
-    background:#e90606;
-    color:white;
-    border:none;
-    cursor:pointer
+
+#image img {
+    width: 100%;         /* Scale it down relative to container */
+    max-width: 350px;   /* Hard limit so it doesn’t get too big */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-button[disabled]{opacity:.6;
-    cursor:not-allowed
+
+/* Form styling */
+form {
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;                  /* Stretch to parent width */
 }
-input{
-    background-color: #e90606;
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: .9rem;
+}
+
+input, button {
+    width: 90%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input {
+    background-color: #eed3d1;
+}
+
+button {
+    margin-top: 16px;
+    background: #ca1600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}
+a{
+    color: #ca1600;
 }
