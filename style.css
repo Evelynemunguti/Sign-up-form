@@ -4,7 +4,7 @@ body {
     background: #f8f8f8;
 }
 
-/* Main container: Form + Image */
+
 #sign {
     display: flex;
     align-items: center;       /* vertically center */
@@ -16,16 +16,15 @@ body {
     box-sizing: border-box;
 }
 
-/* Form container */
+
 #words {
-    /* flex: 1; */
+  
     max-width: 400px;             /* Prevent form from being too wide */
    
 }
 
-/* Image container */
+
 #image {
-    /* flex: 1;           Image takes half */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +38,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Form styling */
+
 form {
     padding: 12px;
     border-radius: 8px;
@@ -69,7 +68,10 @@ button {
     background: #ca1600;
     color: white;
     border: none;
+
     cursor: pointer;
+   
+
 }
 button[disabled] {
     opacity: .6;
